@@ -72,7 +72,6 @@ create the package **model** inside the package api
 
 Create a new class UserController in controller package and add code below 
 
-
 ```java
 
 package com.example.springapi.api.controller;
@@ -117,6 +116,64 @@ public class UserController {
 
 
 
- 
+Create a new class User in model package and add code below 
+
+```java
+package com.example.springapi.api.model;
+
+public class User {
+
+    private int id;
+    private String name;
+    private String age;
+    private String email;
+
+    public User(int id, String name, String age, String email) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+}
+
+
+```
+
+ Once you run the application, you can find the users through the Postman, test calling the url 127.0.0.1:8080/user?iid=1 and see below the data retrived from list you've created, 
+
+ ![image](https://github.com/victorf16/springapiExample/assets/28166733/2a242909-9feb-469b-88c9-3cfeb9270119)
+
 
 
